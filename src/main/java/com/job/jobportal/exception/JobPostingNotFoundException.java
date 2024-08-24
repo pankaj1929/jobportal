@@ -5,6 +5,6 @@ public class JobPostingNotFoundException extends RuntimeException{
         super("Job posting not found with ID: " + id);
     }
     public JobPostingNotFoundException(String s) {
-
+     super();
     }
 }

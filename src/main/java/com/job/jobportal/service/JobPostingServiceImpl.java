@@ -51,7 +51,7 @@ public class JobPostingServiceImpl implements JobPostingService{
     public void deleteJobPosting(Long id) {
         JobPosting jobPosting = jobPostingRepository.findById(id)
                 .orElseThrow(() -> new JobPostingNotFoundException(id));
-        jobPostingRepository.deleteById(id);
+        jobPostingRepository.deleteById(jobPosting.getId());
     }
 
     @Override
